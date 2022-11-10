@@ -1,5 +1,5 @@
-![](assets\images\once_banner.webp)
-![](assets\images\minirater_banner.png)
+![minirater banner](assets/images/minirater_banner.png)
+![once banneer](assets/images/once_banner.webp)
 
 # Minirater
 
