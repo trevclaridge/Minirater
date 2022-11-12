@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                     Text('Row $index'),
                   ),
                   const DataCell(
-                    const Text('a letter'),
+                    Text('a letter'),
                   ),
                   const DataCell(
                     Text('a date'),
@@ -67,6 +67,18 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'creator_profile');
+            },
+            child: const Text('Read'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, 'create_creator');
+            },
+            child: Text('Write'),
           )
         ],
       ),

@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "853035020452",
+    "firebase_url": "https://minirater-default-rtdb.firebaseio.com",
     "project_id": "minirater",
     "storage_bucket": "minirater.appspot.com"
   },
@@ -29,6 +30,13 @@
             {
               "client_id": "853035020452-gjkdhvb9c749ejmvaanqe24jcfuttpkd.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "853035020452-8q01g8j9oe1vhq3sjd597gvq6pscgijl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.minirater"
+              }
             }
           ]
         }

@@ -49,6 +49,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '853035020452',
     projectId: 'minirater',
     authDomain: 'minirater.firebaseapp.com',
+    databaseURL: 'https://minirater-default-rtdb.firebaseio.com',
     storageBucket: 'minirater.appspot.com',
     measurementId: 'G-Y9X0W6QEZR',
   );
@@ -58,6 +59,7 @@ class DefaultFirebaseOptions {
     appId: '1:853035020452:android:d168d9f867f0ecdd7d3631',
     messagingSenderId: '853035020452',
     projectId: 'minirater',
+    databaseURL: 'https://minirater-default-rtdb.firebaseio.com',
     storageBucket: 'minirater.appspot.com',
   );
 
@@ -66,6 +68,7 @@ class DefaultFirebaseOptions {
     appId: '1:853035020452:ios:bdaf68f57fbd7e727d3631',
     messagingSenderId: '853035020452',
     projectId: 'minirater',
+    databaseURL: 'https://minirater-default-rtdb.firebaseio.com',
     storageBucket: 'minirater.appspot.com',
     iosClientId: '853035020452-8q01g8j9oe1vhq3sjd597gvq6pscgijl.apps.googleusercontent.com',
     iosBundleId: 'com.example.minirater',
@@ -76,6 +79,7 @@ class DefaultFirebaseOptions {
     appId: '1:853035020452:ios:bdaf68f57fbd7e727d3631',
     messagingSenderId: '853035020452',
     projectId: 'minirater',
+    databaseURL: 'https://minirater-default-rtdb.firebaseio.com',
     storageBucket: 'minirater.appspot.com',
     iosClientId: '853035020452-8q01g8j9oe1vhq3sjd597gvq6pscgijl.apps.googleusercontent.com',
     iosBundleId: 'com.example.minirater',
