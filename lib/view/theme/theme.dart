@@ -4,6 +4,7 @@ class CustomTheme {
   static ThemeData get defaultTheme {
     return ThemeData(
       scaffoldBackgroundColor: Palette.background,
+      primarySwatch: Colors.grey,
       textTheme: const TextTheme(
         bodyLarge: TextStyle(color: Palette.textGrey),
         bodyMedium: TextStyle(color: Palette.textGrey),

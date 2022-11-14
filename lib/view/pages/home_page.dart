@@ -11,75 +11,82 @@ class HomePage extends StatelessWidget {
       ),
       body: FooterView(
         footer: MiniraterFooter._getFooter(),
-        flex: 3,
+        flex: 4,
         children: <Widget>[
-          DataTable(
-            columns: const <DataColumn>[
-              DataColumn(
-                label: Expanded(
-                  child: Text(
-                    'Creator',
-                    style: TextStyle(color: Palette.textGrey),
+          Column(
+            children: [
+              DataTable(
+                columnSpacing: 30.0,
+                columns: const <DataColumn>[
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Creator',
+                        style: TextStyle(color: Palette.textGrey),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-              DataColumn(
-                label: Expanded(
-                  child: Text(
-                    'Once\'s Rating',
-                    style: TextStyle(color: Palette.textGrey),
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Once\'s Rating',
+                        style: TextStyle(color: Palette.textGrey),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-              DataColumn(
-                label: Flexible(
-                  child: Text(
-                    'Rated On',
-                    style: TextStyle(color: Palette.textGrey),
+                  DataColumn(
+                    label: Flexible(
+                      child: Text(
+                        'Rated On',
+                        style: TextStyle(color: Palette.textGrey),
+                      ),
+                    ),
                   ),
-                ),
-              ),
-              DataColumn(
-                label: Expanded(
-                  child: Text(
-                    'Community Rating',
-                    style: TextStyle(color: Palette.textGrey),
-                  ),
-                ),
-              ),
-            ],
-            rows: List<DataRow>.generate(
-              20,
-              (index) => DataRow(
-                cells: <DataCell>[
-                  DataCell(
-                    Text('Row $index'),
-                  ),
-                  const DataCell(
-                    Text('a letter'),
-                  ),
-                  const DataCell(
-                    Text('a date'),
-                  ),
-                  const DataCell(
-                    Text('a letter'),
+                  DataColumn(
+                    label: Expanded(
+                      child: Text(
+                        'Community Rating',
+                        style: TextStyle(color: Palette.textGrey),
+                      ),
+                    ),
                   ),
                 ],
+                rows: List<DataRow>.generate(
+                  5,
+                  (index) => DataRow(
+                    cells: <DataCell>[
+                      DataCell(
+                        Text('Row $index'),
+                      ),
+                      const DataCell(
+                        Text('a letter'),
+                      ),
+                      const DataCell(
+                        Text('a date'),
+                      ),
+                      const DataCell(
+                        Text('a letter'),
+                      ),
+                    ],
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(height: 30.0),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'creator_profile');
+                },
+                child: const Text('Read'),
+              ),
+              const SizedBox(height: 30.0),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, 'create_creator');
+                },
+                child: const Text('Add a New Creator'),
+              ),
+            ],
           ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, 'creator_profile');
-            },
-            child: const Text('Read'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.pushNamed(context, 'create_creator');
-            },
-            child: Text('Write'),
-          )
         ],
       ),
     );

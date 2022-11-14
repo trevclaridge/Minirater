@@ -1,7 +1,9 @@
+// ignore_for_file: avoid_print
+
 part of view;
 
 class CreatorProfilePage extends StatefulWidget {
-  CreatorProfilePage({Key? key}) : super(key: key);
+  const CreatorProfilePage({Key? key}) : super(key: key);
 
   @override
   State<CreatorProfilePage> createState() => _CreatorProfilePageState();
@@ -28,7 +30,6 @@ class _CreatorProfilePageState extends State<CreatorProfilePage> {
 
   @override
   Widget build(BuildContext context) {
-    getText();
     return Scaffold(
       appBar: MRAppBar(
         appBar: AppBar(),
@@ -37,7 +38,12 @@ class _CreatorProfilePageState extends State<CreatorProfilePage> {
         footer: MiniraterFooter._getFooter(),
         flex: 3,
         children: <Widget>[
-          Center(child: Text(displayText)),
+          Center(
+            child: ElevatedButton(
+              onPressed: (() => getText()),
+              child: const Text('Get Data'),
+            ),
+          ),
         ],
       ),
     );

@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 import 'package:minirater/view/view.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: <String, WidgetBuilder>{
         'home': (context) => const HomePage(),
-        'creator_profile': (context) => CreatorProfilePage(),
+        'creator_profile': (context) => const CreatorProfilePage(),
         'create_creator': (context) => CreatorCreatorPage()
       },
     );
