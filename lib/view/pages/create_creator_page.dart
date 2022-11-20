@@ -120,6 +120,7 @@ class _CreatorCreatorPageState extends State<CreatorCreatorPage> {
                         validator: _creatorURLValidator,
                       ),
                       const SizedBox(height: 30.0),
+                      // I know, I know, just...go with it.
                       isScreenWide
                           ? Row(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -514,7 +515,7 @@ class _CreatorCreatorPageState extends State<CreatorCreatorPage> {
                             'date_added': DateTime.now().toString(),
                             'oaiss_rating': _rating,
                             'oaiss_rating_date': date,
-                            'oaiss_notes': oncesNotes
+                            'oaiss_notes': oncesNotes,
                           }
                         }
                       };

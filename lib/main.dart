@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         'home': (context) => const HomePage(),
         'creator_profile': (context) => const CreatorProfilePage(),
-        'create_creator': (context) => CreatorCreatorPage()
+        'create_creator': (context) => const CreatorCreatorPage()
       },
     );
   }
